@@ -1,0 +1,5 @@
+---
+- name: Update repositories and install foo package
+  community.general.apk:
+    name: docker
+    update_cache: true
