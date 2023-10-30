@@ -1,0 +1,27 @@
+---
+- name: Update servers
+  hosts: 192.168.2.156
+  remote_user: root
+
+  tasks:
+  # Update repositories and install "foo" package
+  - apk:
+      name: docker
+      update_cache: yes
+      update_cache: true
+  - apk:
+      name: rsync
+      update_cache: yes
+      update_cache: true
+  - apk:
+      name: tailscale
+      update_cache: yes
+      update_cache: true
+  - apk:
+      name: nano
+      update_cache: yes
+      update_cache: true                  
+  - apk:
+      name: sshpass
+      update_cache: yes
+      update_cache: true                        
