@@ -4,24 +4,33 @@
   remote_user: root
 
   tasks:
-  # Update repositories and install "foo" package
-  - apk:
+  - name: docker
+    apk:
       name: docker
-      update_cache: yes
       update_cache: true
-  - apk:
+
+  - name: rsync
+    apk:
       name: rsync
-      update_cache: yes
       update_cache: true
-  - apk:
+
+  - name: tailscale
+    apk:
       name: tailscale
-      update_cache: yes
       update_cache: true
-  - apk:
+
+  - name: nano
+    apk:
       name: nano
-      update_cache: yes
       update_cache: true                  
-  - apk:
+      
+  - name: sshpass
+    apk:
       name: sshpass
-      update_cache: yes
-      update_cache: true                        
+      update_cache: true  
+
+  - name: Start tailscale service
+    ansible.builtin.service:
+      name: tailscale
+      enabled: yes
+      state: started             
