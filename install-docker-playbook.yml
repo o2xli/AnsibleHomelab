@@ -1,6 +1,6 @@
 ---
 - name: Update servers
-  hosts: 192.168.2.156
+  hosts: alpine
   remote_user: root
 
   tasks:
