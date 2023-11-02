@@ -1,6 +1,6 @@
 ---
 - name: Update servers
-  hosts: 192.168.2.156
+  hosts: {{Homelab}}
   remote_user: root
 
   tasks:
