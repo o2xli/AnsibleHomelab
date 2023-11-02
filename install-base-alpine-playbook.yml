@@ -37,4 +37,4 @@
 
   - name: Install python request module
     pip:
-      name: requests         
+      name: "requests"         
