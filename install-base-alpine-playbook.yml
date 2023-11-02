@@ -1,6 +1,6 @@
 ---
 - name: Update servers
-  hosts: {{Homelab}}
+  hosts: "{{Homelab}}"
   remote_user: root
 
   tasks:
