@@ -4,6 +4,12 @@
   remote_user: root
 
   tasks:
+  
+  - name: pip
+    apk:
+      name: py3-pip
+      update_cache: true
+
   - name: docker
     apk:
       name: docker
