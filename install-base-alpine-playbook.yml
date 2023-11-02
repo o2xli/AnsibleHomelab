@@ -34,6 +34,7 @@
       name: tailscale
       enabled: yes
       state: started    
-  
-  - pip:
-    name: requests         
+
+  - name: Install python request module
+    pip:
+      name: requests         
