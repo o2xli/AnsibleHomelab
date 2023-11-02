@@ -40,6 +40,12 @@
       name: tailscale
       enabled: yes
       state: started    
+  
+  - name: Start docker service
+    ansible.builtin.service:
+      name: docker
+      enabled: yes
+      state: started    
 
   # - name: Install python setuptools module
   #   pip:
