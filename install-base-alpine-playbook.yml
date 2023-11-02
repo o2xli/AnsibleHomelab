@@ -7,7 +7,7 @@
   
   - name: py3-requests
     apk:
-      name: py3-request
+      name: py3-requests
       update_cache: true
 
   - name: docker
