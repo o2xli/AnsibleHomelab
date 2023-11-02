@@ -35,6 +35,14 @@
       enabled: yes
       state: started    
 
+  - name: Install python setuptools module
+    pip:
+      name: "setuptools" 
+
+  - name: Install python virtualenv module
+    pip:
+      name: "virtualenv"     
+
   - name: Install python request module
     pip:
       name: "requests"         
