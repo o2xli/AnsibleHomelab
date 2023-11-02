@@ -1,0 +1,20 @@
+---
+- name: Update servers
+  hosts: alpine
+  remote_user: root
+
+  
+  tasks:
+  - name: Create a data container
+    docker_container:
+      name: prometheus
+      image: prom/prometheus:latest
+      state: started
+      restart: yes
+      env:
+        PATH: "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+      ports:
+        - "9090:9090"
+      volumes:
+        - prometheus-conf:/etc/prometheus
+        - prometheus-data:/prometheus
