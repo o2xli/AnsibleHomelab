@@ -1,6 +1,6 @@
 ---
 - name: Update servers
-  hosts: "{{ alpine }}"
+  hosts: alpine
   remote_user: root
 
   tasks:
