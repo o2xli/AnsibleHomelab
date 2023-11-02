@@ -5,9 +5,9 @@
 
   tasks:
   
-  - name: pip
+  - name: py3-requests
     apk:
-      name: py3-pip
+      name: py3-request
       update_cache: true
 
   - name: docker
@@ -49,6 +49,6 @@
   #   pip:
   #     name: "virtualenv"     
 
-  - name: Install python request module
-    pip:
-      name: "requests"         
+  # - name: Install python request module
+  #   pip:
+  #     name: "requests"         
