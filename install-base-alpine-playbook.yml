@@ -45,9 +45,9 @@
     pip:
       name: "setuptools" 
 
-  - name: Install python virtualenv module
-    pip:
-      name: "virtualenv"     
+  # - name: Install python virtualenv module
+  #   pip:
+  #     name: "virtualenv"     
 
   - name: Install python request module
     pip:
